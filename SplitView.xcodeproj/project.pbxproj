@@ -12,6 +12,11 @@
 		DEF4975522F95893005E5B00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF4975322F95893005E5B00 /* Main.storyboard */; };
 		DEF4975722F95895005E5B00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF4975622F95895005E5B00 /* Assets.xcassets */; };
 		DEF4975A22F95895005E5B00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF4975822F95895005E5B00 /* LaunchScreen.storyboard */; };
+		DEF4976222F958C2005E5B00 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF4976122F958C2005E5B00 /* iPad.storyboard */; };
+		DEF4976422F95B43005E5B00 /* PhotosTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF4976322F95B43005E5B00 /* PhotosTVC.swift */; };
+		DEF4976622F95BCA005E5B00 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF4976522F95BCA005E5B00 /* DataModel.swift */; };
+		DEF4976A22F97F6D005E5B00 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF4976922F97F6D005E5B00 /* Photo.swift */; };
+		DEF4976C22F9A0D0005E5B00 /* md5Generate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF4976B22F9A0CF005E5B00 /* md5Generate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		DEF4975622F95895005E5B00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEF4975922F95895005E5B00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEF4975B22F95895005E5B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEF4976122F958C2005E5B00 /* iPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
+		DEF4976322F95B43005E5B00 /* PhotosTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTVC.swift; sourceTree = "<group>"; };
+		DEF4976522F95BCA005E5B00 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		DEF4976922F97F6D005E5B00 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		DEF4976B22F9A0CF005E5B00 /* md5Generate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = md5Generate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +66,12 @@
 			children = (
 				DEF4974F22F95893005E5B00 /* AppDelegate.swift */,
 				DEF4975122F95893005E5B00 /* ViewController.swift */,
+				DEF4976B22F9A0CF005E5B00 /* md5Generate.swift */,
+				DEF4976922F97F6D005E5B00 /* Photo.swift */,
 				DEF4975322F95893005E5B00 /* Main.storyboard */,
+				DEF4976122F958C2005E5B00 /* iPad.storyboard */,
+				DEF4976322F95B43005E5B00 /* PhotosTVC.swift */,
+				DEF4976522F95BCA005E5B00 /* DataModel.swift */,
 				DEF4975622F95895005E5B00 /* Assets.xcassets */,
 				DEF4975822F95895005E5B00 /* LaunchScreen.storyboard */,
 				DEF4975B22F95895005E5B00 /* Info.plist */,
@@ -122,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEF4976222F958C2005E5B00 /* iPad.storyboard in Resources */,
 				DEF4975A22F95895005E5B00 /* LaunchScreen.storyboard in Resources */,
 				DEF4975722F95895005E5B00 /* Assets.xcassets in Resources */,
 				DEF4975522F95893005E5B00 /* Main.storyboard in Resources */,
@@ -135,8 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEF4976A22F97F6D005E5B00 /* Photo.swift in Sources */,
 				DEF4975222F95893005E5B00 /* ViewController.swift in Sources */,
+				DEF4976622F95BCA005E5B00 /* DataModel.swift in Sources */,
+				DEF4976422F95B43005E5B00 /* PhotosTVC.swift in Sources */,
 				DEF4975022F95893005E5B00 /* AppDelegate.swift in Sources */,
+				DEF4976C22F9A0D0005E5B00 /* md5Generate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +303,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SplitView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +322,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SplitView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

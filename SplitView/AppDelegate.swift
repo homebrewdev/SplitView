@@ -8,14 +8,42 @@
 
 import UIKit
 
+var data = [Photo]()
+
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // добавляем наш кастомный сториборд
+        if let splitViewController = self.window?.rootViewController as? UISplitViewController,
+            let navigationController = splitViewController.viewControllers.last as? UINavigationController {
+            navigationController.topViewController?.navigationItem.leftBarButtonItem
+                = splitViewController.displayModeButtonItem
+            navigationController.topViewController?.navigationItem.leftItemsSupplementBackButton = true
+            splitViewController.delegate = self
+            
+            splitViewController.preferredDisplayMode = .allVisible
+            
+            
+        }
+        
+        self.window?.makeKeyAndVisible()
+        return true
+    }
+    
+    // MARK: - Split view
+    func splitViewController(splitViewController: UISplitViewController,
+                             collapseSecondaryViewController secondaryViewController:UIViewController,
+                             ontoPrimaryViewController primaryViewController:UIViewController) -> Bool {
+        
+        guard secondaryViewController is UINavigationController else {return false}
+            //let topAsDetail = secondaryAsNav.topViewController as? PhotosTVC else {return false}
+        
+        // Возврат true сигнализирует, что Detail должен быть отброшен
         return true
     }
 
