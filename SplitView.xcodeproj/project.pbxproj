@@ -16,7 +16,7 @@
 		DEF4976422F95B43005E5B00 /* PhotosTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF4976322F95B43005E5B00 /* PhotosTVC.swift */; };
 		DEF4976622F95BCA005E5B00 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF4976522F95BCA005E5B00 /* DataModel.swift */; };
 		DEF4976A22F97F6D005E5B00 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF4976922F97F6D005E5B00 /* Photo.swift */; };
-		DEF4976C22F9A0D0005E5B00 /* md5Generate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF4976B22F9A0CF005E5B00 /* md5Generate.swift */; };
+		DEF4976C22F9A0D0005E5B00 /* GenerateHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF4976B22F9A0CF005E5B00 /* GenerateHash.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		DEF4976322F95B43005E5B00 /* PhotosTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTVC.swift; sourceTree = "<group>"; };
 		DEF4976522F95BCA005E5B00 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		DEF4976922F97F6D005E5B00 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
-		DEF4976B22F9A0CF005E5B00 /* md5Generate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = md5Generate.swift; sourceTree = "<group>"; };
+		DEF4976B22F9A0CF005E5B00 /* GenerateHash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateHash.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 			children = (
 				DEF4974F22F95893005E5B00 /* AppDelegate.swift */,
 				DEF4975122F95893005E5B00 /* ViewController.swift */,
-				DEF4976B22F9A0CF005E5B00 /* md5Generate.swift */,
+				DEF4976B22F9A0CF005E5B00 /* GenerateHash.swift */,
 				DEF4976922F97F6D005E5B00 /* Photo.swift */,
 				DEF4975322F95893005E5B00 /* Main.storyboard */,
 				DEF4976122F958C2005E5B00 /* iPad.storyboard */,
@@ -156,7 +156,7 @@
 				DEF4976622F95BCA005E5B00 /* DataModel.swift in Sources */,
 				DEF4976422F95B43005E5B00 /* PhotosTVC.swift in Sources */,
 				DEF4975022F95893005E5B00 /* AppDelegate.swift in Sources */,
-				DEF4976C22F9A0D0005E5B00 /* md5Generate.swift in Sources */,
+				DEF4976C22F9A0D0005E5B00 /* GenerateHash.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

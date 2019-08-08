@@ -14,10 +14,22 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var subtitleTextEdit: UITextField!
     
+    @IBOutlet weak var photoImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let bundlePath = Bundle.main.bundlePath
         print("Bundle path = \(bundlePath)")
+        
+//        let photoImageView: UIImageView = {
+//            let iv = UIImageView()
+//
+//            // Set image with image literal
+//            // iv.image = #imageLiteral(resourceName: "feedback")
+//            iv.image = #imageLiteral(resourceName: "belka1")
+//            return iv
+//        }()
+        photoImage.image = #imageLiteral(resourceName: "belka1")
     }
     
     // отслеживаем положение устройства compact или нет
@@ -39,5 +51,6 @@ class ViewController: UIViewController {
         let newPhoto = Photo(title: titleTextEdit.text!, subtitle: subtitleTextEdit.text!)
         data.append(newPhoto)
     }
+   
 }
 

@@ -9,7 +9,7 @@
 import UIKit
 
 class PhotosTVC: UITableViewController {
-    var index: Int = 0 // индекс нажатой ячейки
+    public var index: Int = 0 // индекс нажатой ячейки
     
     var photos = [Photo]() {
        didSet{
@@ -39,6 +39,9 @@ class PhotosTVC: UITableViewController {
 
     override func viewDidLoad() {
         initAllPhotos()
+        let hello = "Hello world!"
+        print("Hash = \(generate_sha512(inputString: hello))")
+        
     }
     
     override func reloadInputViews() {
@@ -84,6 +87,7 @@ class PhotosTVC: UITableViewController {
                 //guard let controller = destination as? ImageViewController else {return }
                 //controller.imageURL = NSURL(string: photo.imageURL)
                 //controller.title = photo.title
+                // тайтл ячейки
                 destination.title = photo.title
             }
         }
@@ -95,4 +99,8 @@ class PhotosTVC: UITableViewController {
         print("selected row with index = \(index)")
     }
     
+    @IBAction func hideTableBarButtonTap(_ sender: UIBarButtonItem) {
+        self.view.removeFromSuperview()
+        print("Removed from superview!")
+    }
 }

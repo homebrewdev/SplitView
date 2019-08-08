@@ -7,12 +7,12 @@
 //
 
 class DataModel {
-    //var data = [Photo]()
+    //let fotoBank: Array<Photo> = []
     
     init() {
         var i: Int = 1
         for _ in 1...10 {
-            let photo = Photo(title: "Foto " + String(i), subtitle: "Описание " + String(i))
+            let photo = Photo(title: "Foto " + String(i), subtitle: "Описание данной фото " + String(i))
             data.append(photo)
             i += 1
         }

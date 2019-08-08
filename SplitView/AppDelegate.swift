@@ -26,8 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
             navigationController.topViewController?.navigationItem.leftItemsSupplementBackButton = true
             splitViewController.delegate = self
             
-            splitViewController.preferredDisplayMode = .allVisible
-            
+            splitViewController.preferredDisplayMode = .automatic
             
         }
         

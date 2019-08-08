@@ -9,8 +9,8 @@
 import Foundation
 
 struct Photo {
-    let title : String
-    let subtitle: String
+    var title : String
+    var subtitle: String
 
     init(title: String, subtitle: String) {
 
