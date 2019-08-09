@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DE9C3DA622FD94E50098384A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9C3DA522FD94E50098384A /* SettingsViewController.swift */; };
+		DE9C3DA822FDB5550098384A /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9C3DA722FDB5550098384A /* ImagePickerController.swift */; };
 		DEF4975022F95893005E5B00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF4974F22F95893005E5B00 /* AppDelegate.swift */; };
 		DEF4975222F95893005E5B00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF4975122F95893005E5B00 /* ViewController.swift */; };
 		DEF4975522F95893005E5B00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF4975322F95893005E5B00 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		DE9C3DA522FD94E50098384A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		DE9C3DA722FDB5550098384A /* ImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
 		DEF4974C22F95893005E5B00 /* SplitView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF4974F22F95893005E5B00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEF4975122F95893005E5B00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			children = (
 				DEF4974F22F95893005E5B00 /* AppDelegate.swift */,
 				DEF4975122F95893005E5B00 /* ViewController.swift */,
+				DE9C3DA722FDB5550098384A /* ImagePickerController.swift */,
 				DE9C3DA522FD94E50098384A /* SettingsViewController.swift */,
 				DEF4976B22F9A0CF005E5B00 /* GenerateHash.swift */,
 				DEF4976922F97F6D005E5B00 /* Photo.swift */,
@@ -157,6 +160,7 @@
 				DEF4976A22F97F6D005E5B00 /* Photo.swift in Sources */,
 				DEF4975222F95893005E5B00 /* ViewController.swift in Sources */,
 				DE9C3DA622FD94E50098384A /* SettingsViewController.swift in Sources */,
+				DE9C3DA822FDB5550098384A /* ImagePickerController.swift in Sources */,
 				DEF4976622F95BCA005E5B00 /* DataModel.swift in Sources */,
 				DEF4976422F95B43005E5B00 /* PhotosTVC.swift in Sources */,
 				DEF4975022F95893005E5B00 /* AppDelegate.swift in Sources */,

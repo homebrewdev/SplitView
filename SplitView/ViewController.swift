@@ -14,13 +14,38 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var subtitleTextEdit: UITextField!
     
-    @IBOutlet weak var photoImage: UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
+    
+    private lazy var imagePicker = ImagePicker()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let bundlePath = Bundle.main.executableURL
+        let bundlePath = Bundle.main.bundlePath
         print("Bundle path = \(bundlePath)")
         
+        imagePicker.delegate = self
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "camera",
+                                                           style: .plain,
+                                                           target: self,
+                                                           action: #selector(cameraButtonTapped))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "photo",
+                                                            style: .plain,
+                                                            target: self,
+                                                            action: #selector(photoButtonTapped))
+    
+    }
+    
+    private func presentImagePicker(sourceType: UIImagePickerController.SourceType) {
+        imagePicker.present(parent: self, sourceType: sourceType)
+    }
+    
+    @objc func photoButtonTapped(_ sender: UIButton) { imagePicker.photoGalleryAccessRequest() }
+    @objc func cameraButtonTapped(_ sender: UIButton) { imagePicker.cameraAccessRequest() }
+
+
+    
+    
 //        let photoImageView: UIImageView = {
 //            let iv = UIImageView()
 //
@@ -29,8 +54,8 @@ class ViewController: UIViewController {
 //            iv.image = #imageLiteral(resourceName: "belka1")
 //            return iv
 //        }()
-        photoImage.image = #imageLiteral(resourceName: "belka1")
-    }
+//        photoImage.image = #imageLiteral(resourceName: "belka1")
+//}
     
     // отслеживаем положение устройства compact или нет
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -55,3 +80,25 @@ class ViewController: UIViewController {
    
 }
 
+
+extension ViewController: ImagePickerDelegate {
+    
+    func imagePickerDelegate(didSelect image: UIImage, delegatedForm: ImagePicker) {
+        imageView.image = image
+        imagePicker.dismiss()
+    }
+    
+    func imagePickerDelegate(didCancel delegatedForm: ImagePicker) { imagePicker.dismiss() }
+    
+    func imagePickerDelegate(canUseGallery accessIsAllowed: Bool, delegatedForm: ImagePicker) {
+        if accessIsAllowed { presentImagePicker(sourceType: .photoLibrary) }
+    }
+    
+    func imagePickerDelegate(canUseCamera accessIsAllowed: Bool, delegatedForm: ImagePicker) {
+        // works only on real device (crash on simulator)
+        //if accessIsAllowed { presentImagePicker(sourceType: .camera)
+        // я использую симулятор посему пишем так
+        if accessIsAllowed { presentImagePicker(sourceType: .photoLibrary)
+    }
+    }
+}
