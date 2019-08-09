@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let bundlePath = Bundle.main.bundlePath
+        let bundlePath = Bundle.main.executableURL
         print("Bundle path = \(bundlePath)")
         
 //        let photoImageView: UIImageView = {
@@ -45,6 +45,7 @@ class ViewController: UIViewController {
     @IBAction func saveButtonTap(_ sender: UIButton) {
         let newPhoto = Photo(title: titleTextEdit.text!, subtitle: subtitleTextEdit.text!)
         addNewPhoto(newPhoto: newPhoto)
+        navigationController?.popToRootViewController(animated: true)
     }
     
     public func addNewPhoto(newPhoto: Photo) {

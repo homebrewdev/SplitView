@@ -40,7 +40,7 @@ class PhotosTVC: UITableViewController {
     override func viewDidLoad() {
         initAllPhotos()
         let hello = "Hello world!"
-        print("Hash = \(generate_sha512(inputString: hello))")
+        print("Hash = \(generate_sha512Hex(inputString: hello))")
         
     }
     

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z0U-pZ-fJy">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina6_1" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,17 +15,17 @@
             <objects>
                 <viewController id="R3f-hg-rmU" customClass="ViewController" customModule="SplitView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pnk-ZK-sB8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="531.5" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RyU-CQ-3aj">
-                                <rect key="frame" x="8" y="138" width="76" height="18"/>
+                                <rect key="frame" x="8" y="50" width="135" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="введите описание" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7yu-k7-Skg">
-                                <rect key="frame" x="92" y="134" width="230" height="30"/>
+                                <rect key="frame" x="151" y="46" width="230" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="230" id="JEb-jt-Lyw"/>
                                 </constraints>
@@ -34,7 +34,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="введите название фотографии" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2PT-Ja-sge">
-                                <rect key="frame" x="92" y="96" width="230" height="30"/>
+                                <rect key="frame" x="151" y="8" width="230" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="230" id="Z9a-6f-Sz5"/>
                                 </constraints>
@@ -43,20 +43,20 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oar-yh-sqO">
-                                <rect key="frame" x="168.5" y="168" width="77" height="30"/>
+                                <rect key="frame" x="227.5" y="80" width="77" height="30"/>
                                 <state key="normal" title="Сохранить"/>
                                 <connections>
                                     <action selector="saveButtonTap:" destination="R3f-hg-rmU" eventType="touchUpInside" id="0oG-wb-SVF"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lei-xF-4Za">
-                                <rect key="frame" x="20" y="100" width="63.5" height="18"/>
+                                <rect key="frame" x="20" y="12" width="122.5" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esG-hF-f7W">
-                                <rect key="frame" x="107" y="208" width="200" height="200"/>
+                                <rect key="frame" x="166" y="120" width="200" height="200"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="B7b-8l-sg4"/>
@@ -94,38 +94,65 @@
             </objects>
             <point key="canvasLocation" x="272.11394302848578" y="348"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="FJ9-Ug-f3z">
+            <objects>
+                <viewController id="dqr-c5-Lki" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A7g-Z6-vwR">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7X-fX-89j">
+                                <rect key="frame" x="416" y="52" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="f7X-fX-89j" firstAttribute="centerX" secondItem="A7g-Z6-vwR" secondAttribute="centerX" id="0lf-GV-2tq"/>
+                            <constraint firstItem="f7X-fX-89j" firstAttribute="top" secondItem="h75-PC-0Tm" secondAttribute="top" constant="52" id="tLn-sa-PuV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="h75-PC-0Tm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fKo-xX-AW1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1195.6521739130435" y="362.94642857142856"/>
+        </scene>
         <!--Photo Base-->
         <scene sceneID="bnp-gS-YIt">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="D6H-eK-JWM" customClass="PhotosTVC" customModule="SplitView" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="HSU-VX-Zid">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="364" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="a0s-Az-5EH" detailTextLabel="Hxa-tq-Y2F" imageView="rMA-O9-hno" style="IBUITableViewCellStyleSubtitle" id="1ck-Sh-ZB6">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="364" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1ck-Sh-ZB6" id="9pZ-p5-mh3">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="44" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a0s-Az-5EH">
-                                            <rect key="frame" x="67" y="5" width="33.5" height="20.5"/>
+                                            <rect key="frame" x="59" y="5" width="33.5" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hxa-tq-Y2F">
-                                            <rect key="frame" x="67" y="25.5" width="44" height="14.5"/>
+                                            <rect key="frame" x="59" y="25.5" width="44" height="14.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="folder-blue-favorites-icon" id="rMA-O9-hno">
-                                            <rect key="frame" x="20" y="5" width="32" height="32"/>
+                                            <rect key="frame" x="20" y="9" width="24" height="24"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>
@@ -157,7 +184,7 @@
             <objects>
                 <navigationController id="jwj-rc-dU9" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eE4-Mv-gmE">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="364" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -168,10 +195,10 @@
             </objects>
             <point key="canvasLocation" x="215" y="-433"/>
         </scene>
-        <!--Split View Controller-->
+        <!--Photo Bank-->
         <scene sceneID="7gm-sF-Zgv">
             <objects>
-                <splitViewController id="z0U-pZ-fJy" sceneMemberID="viewController">
+                <splitViewController title="Photo Bank" preferredPrimaryColumnWidthFraction="0.29999999999999999" id="z0U-pZ-fJy" sceneMemberID="viewController">
                     <connections>
                         <segue destination="jwj-rc-dU9" kind="relationship" relationship="masterViewController" id="x8h-fk-fdg"/>
                         <segue destination="R3f-hg-rmU" kind="relationship" relationship="detailViewController" id="4Zz-V2-WsF"/>
@@ -183,9 +210,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="folder-blue-favorites-icon" width="32" height="32"/>
+        <image name="folder-blue-favorites-icon" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4ya-vr-UoE"/>
+        <segue reference="4Zz-V2-WsF"/>
     </inferredMetricsTieBreakers>
 </document>
